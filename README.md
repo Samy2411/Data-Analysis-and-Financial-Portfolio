@@ -1,28 +1,27 @@
 # Data Analysis and Financial Portfolio
 This repository showcases a comprehensive collection of data analysis and Financial projects completed during my Master's program in International Trade and Finance. The projects demonstrate Financial Knowledge, proficiency in statistical analysis, econometric modeling, and data visualization techniques applied to real-world economic and financial datasets.
-# Projet 1 : Analyse de Portefeuille et Évaluation d'Actifs avec le Modèle CAPM
 
-## Résumé Exécutif
+# Project 1: Portfolio Analysis and Asset Valuation with the CAPM Model
 
-Ce projet est une analyse quantitative complète d'un portefeuille d'actions françaises du CAC 40, menée en **Python**. L'objectif est de passer de données de marché brutes à une évaluation du risque systématique et du rendement attendu pour chaque actif, en utilisant le **Modèle d'Évaluation des Actifs Financiers (CAPM)**.
+## Executive Summary
 
-**Portefeuille Analysé :**
+This project is a comprehensive quantitative analysis of a French stock portfolio from the CAC 40, conducted in **Python**. The objective is to progress from raw market data to an evaluation of systematic risk and expected return for each asset, using the **Capital Asset Pricing Model (CAPM)**.
+
+**Analyzed Portfolio:**
 *   LVMH (`MC.PA`)
 *   TotalEnergies (`TTE.PA`)
 *   BNP Paribas (`BNP.PA`)
 *   Airbus (`AIR.PA`)
-*   **Indice de Marché :** CAC 40 (`^FCHI`)
+*   **Market Index:** CAC 40 (`^FCHI`)
 
-**Méthodologie :**
-1.  **Collecte de Données :** Téléchargement de 7 ans de données de prix journaliers via l'API `yfinance`.
-2.  **Analyse Exploratoire :** Visualisation des performances normalisées (Base 100) pour une comparaison juste.
-3.  **Calcul des Rendements :** Transformation des prix en rendements journaliers avec `pandas`.
-4.  **Calcul du Bêta :** Pour chaque action, le Bêta a été déterminé par une **régression linéaire** (Moindres Carrés Ordinaires) de ses rendements sur ceux du marché, en utilisant la librairie `statsmodels`.
-5.  **Application du CAPM :** Estimation du rendement annuel attendu pour chaque actif en fonction de son Bêta et d'hypothèses de marché (Taux sans risque, Prime de risque du marché).
+**Methodology:**
+1.  **Data Collection:** Downloading 7 years of daily price data via the `yfinance` API.
+2.  **Exploratory Analysis:** Visualization of normalized performance (Base 100) for fair comparison.
+3.  **Return Calculation:** Transformation of prices into daily returns using `pandas`.
+4.  **Beta Calculation:** For each stock, Beta was determined through **linear regression** (Ordinary Least Squares) of its returns against market returns, using the `statsmodels` library.
+5.  **CAPM Application:** Estimation of expected annual return for each asset based on its Beta and market assumptions (Risk-free rate, Market risk premium).
 
-**Principales Conclusions :**
-*   L'analyse a révélé que les actions **Airbus (Bêta = 1.45)** et **BNP Paribas (Bêta = 1.32)** présentent le risque systématique le plus élevé, amplifiant les mouvements du marché.
-*   Conformément à la théorie financière, ces actions à plus haut risque sont aussi celles qui offrent le **rendement attendu le plus élevé** selon le modèle CAPM (10.26% et 9.60% respectivement).
-*   **TotalEnergies** s'est avérée être l'action la plus "défensive" du portefeuille, avec un Bêta proche de 1.
-
----
+**Key Findings:**
+*   The analysis revealed that **Airbus (Beta = 1.45)** and **BNP Paribas (Beta = 1.32)** stocks present the highest systematic risk, amplifying market movements.
+*   In accordance with financial theory, these higher-risk stocks are also those that offer the **highest expected return** according to the CAPM model (10.26% and 9.60% respectively).
+*   **TotalEnergies** proved to be the most "defensive" stock in the portfolio, with a Beta close to 1.
