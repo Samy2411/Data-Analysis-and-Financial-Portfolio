@@ -1,7 +1,7 @@
 # Data Analysis and Financial Portfolio
 This repository showcases a comprehensive collection of data analysis and Financial projects completed during my Master's program in International Trade and Finance. The projects demonstrate Financial Knowledge, proficiency in statistical analysis, econometric modeling, and data visualization techniques applied to real-world economic and financial datasets.
 
-# Project 1: Portfolio Analysis and Asset Valuation with the CAPM Model
+# Project 7: Portfolio Analysis and Asset Valuation with the CAPM Model
 
 ## Executive Summary
 
@@ -26,7 +26,7 @@ This project is a comprehensive quantitative analysis of a French stock portfoli
 *   In accordance with financial theory, these higher-risk stocks are also those that offer the **highest expected return** according to the CAPM model (10.26% and 9.60% respectively).
 *   **TotalEnergies** proved to be the most "defensive" stock in the portfolio, with a Beta close to 1.
 
-# Project 2: Optimizing a Multi-Asset Portfolio (MPT)
+# Project 8: Optimizing a Multi-Asset Portfolio (MPT)
 
 ## Executive Summary
 
