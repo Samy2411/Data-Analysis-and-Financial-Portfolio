@@ -2,6 +2,32 @@
 This repository showcases a comprehensive collection of data analysis and Financial projects completed during my Master's program in International Trade and Finance. The projects demonstrate Financial Knowledge, proficiency in statistical analysis, econometric modeling, and data visualization techniques applied to real-world economic and financial datasets.
 
 
+# Project 10: Macroeconomic Impact Analysis on Financial Markets
+
+## Executive Summary
+
+## 1. Project Objective
+This project conducts a data-driven analysis to answer a fundamental question in finance: **How do key macroeconomic variables, specifically central bank interest rates and inflation, influence the performance of the French stock market?** Using a decade-and-a-half of data, this study moves beyond simple theory to test these relationships with real-world evidence, focusing on the CAC 40 index.
+
+## 2. Methodology
+The analysis was performed entirely in Python, following a structured time-series workflow:
+1.  **Data Acquisition:** Programmatic download of daily CAC 40 market data (`yfinance`) and monthly macroeconomic indicators—the ECB Main Refinancing Rate and Euro Area HICP Inflation—from the Federal Reserve Economic Data (FRED) database via the `fredapi`.
+2.  **ETL & Resampling:** The core technical challenge involved aligning disparate data frequencies. All datasets were resampled to a consistent **monthly** frequency using the `pandas` library, creating a robust, unified dataset for comparative analysis.
+3.  **Visualization & Statistical Analysis:** The analysis employed dual-axis time-series charts to visualize long-term trends, scatter plots to investigate correlations, and a correlation matrix to statistically quantify the relationships between the variables.
+
+## 3. Key Findings & Insights
+The analysis revealed a nuanced and forward-looking relationship between the macro environment and market performance, challenging simplistic assumptions:
+
+*   **No Direct Correlation Between Inflation and Monthly Returns:** The scatter plot and correlation matrix (correlation of 0.00) show **no statistically significant linear relationship** between the level of inflation and the CAC 40's monthly returns. This indicates that the market's reaction to inflation is complex and highly context-dependent, rather than mechanical.
+
+*   **Markets React to *Anticipation*, Not Just Levels, of Interest Rates:** The primary time-series chart clearly shows that the market's major downturn in 2022 began *before* the ECB's aggressive rate hikes, as investors priced in the future tightening cycle. Conversely, the market began its strong recovery in late 2023, well before rates were actually cut, as it started anticipating the "peak" of the hiking cycle.
+
+*   **Corporate Resilience Can Override Macro Headwinds:** Despite the high-interest-rate environment post-2022—a period traditionally seen as negative for equities—the CAC 40 reached new all-time highs. This counter-intuitive performance highlights the fundamental strength and pricing power of the index's leading companies (e.g., in luxury and industrials), whose robust earnings can outweigh macroeconomic pressures.
+
+## 4. Conclusion
+This project demonstrates that while macroeconomic indicators are crucial, their impact on the stock market is not linear or immediate. The market operates as a **forward-looking mechanism**, reacting to expectations and future shifts in policy. Furthermore, the underlying strength of the constituent companies of an index can serve as a powerful buffer against a challenging macro environment. The analysis confirms that a sophisticated understanding of market dynamics requires looking beyond simple correlations to interpret the interplay between data, expectations, and fundamental corporate health.
+
+---
 
 # Project 8: Optimizing a Multi-Asset Portfolio (MPT)
 
